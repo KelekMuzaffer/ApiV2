@@ -6,6 +6,7 @@ namespace App\Entity;
 
 use DateTimeInterface;
 use Doctrine\ORM\Mapping as ORM;
+use phpDocumentor\Reflection\Types\Nullable;
 
 trait Timestapable{
 
@@ -17,26 +18,42 @@ trait Timestapable{
     private $createdAt;
 
     /**
+     * @return DateTimeInterface
+     */
+    public function getCreatedAt(): ?DateTimeInterface
+    {
+        return $this->createdAt;
+    }
+
+    /**
+     * @param DateTimeInterface $createdAt
+     */
+    public function setCreatedAt(DateTimeInterface $createdAt): self
+    {
+        $this->createdAt = $createdAt;
+    }
+
+    /**
+     * @return DateTimeInterface
+     */
+    public function getUpdatedAt(): ?DateTimeInterface
+    {
+        return $this->updatedAt;
+    }
+
+    /**
+     * @param DateTimeInterface $updatedAt
+     */
+    public function setUpdatedAt(DateTimeInterface $updatedAt): self
+    {
+        $this->updatedAt = $updatedAt;
+    }
+
+    /**
      * @var DateTimeInterface
      * @ORM\Column(type="datetime", nullable=true)
      */
     private $updatedAt;
 
 
-    public function getCreatedAt(): DateTimeInterface
-    {
-        return $this->createdAt;
-    }
-
-    public function getUpdatedAt(): DateTimeInterface
-    {
-        return $this->updatedAt;
-    }
-
-    public function setUpdatedAt(DateTimeInterface $updatedAt): Timestapable
-    {
-        $this->updatedAt = $updatedAt;
-
-        return $this;
-    }
 }

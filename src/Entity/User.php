@@ -2,14 +2,33 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\UserRepository;
+use DateTimeImmutable;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
+ * @ApiResource(
+ *     collectionOperations={
+ *          "get"={
+ *               "normalization_context"={"groups"={"user_info"}}
+ *              },
+ *          "post"
+ *          },
+ *      itemOperations={
+ *                  "get"={
+ *                      "normalization_context"={"groups"={"user_details_read"}}
+ *                  },
+ *                  "put",
+ *                  "patch",
+ *                  "delete"
+ *              }
+ * )
  */
 class User implements UserInterface
 {
@@ -25,6 +44,7 @@ class User implements UserInterface
 
     /**
      * @ORM\Column(type="string", length=180, unique=true)
+     * @Groups({"user_info", "user_details_read","article_details_read"})
      */
     private $email;
 
@@ -40,7 +60,8 @@ class User implements UserInterface
     private $password;
 
     /**
-     * @ORM\OneToMany(targetEntity=Article::class, mappedBy="author", orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity="App\Entity\Article", mappedBy="author", orphanRemoval=true)
+     * @Groups({"user_details_read"})
      */
     private $articles;
 
