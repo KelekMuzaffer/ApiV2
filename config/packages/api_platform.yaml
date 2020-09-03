@@ -5,3 +5,9 @@ api_platform:
         json: ['application/merge-patch+json']
     swagger:
         versions: [3]
+        # Ajouter en plus pour faire l'authorization sur le sawgger d'api platform donc token à renseigner
+        api_keys:
+            apiKey:
+                name: Authorization
+                type: header
+

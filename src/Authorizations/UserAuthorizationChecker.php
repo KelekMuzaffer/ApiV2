@@ -47,7 +47,7 @@ class UserAuthorizationChecker
         }
     }
 
-    // Return si la method est autorise
+    // Return true si la method est autorise
     public function isMethodAllowed(string $method): bool
     {
        return in_array($method, $this->methodAllowed, true);

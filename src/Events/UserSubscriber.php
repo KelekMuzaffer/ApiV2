@@ -34,6 +34,7 @@ class UserSubscriber implements EventSubscriberInterface
 
     }
 
+    // Creer un event avec la function check en 1er parametre et la priorité de l'event en 2ieme
     public static function getSubscribedEvents()
     {
         return [
@@ -41,6 +42,7 @@ class UserSubscriber implements EventSubscriberInterface
         ];
     }
 
+    // Check la method
     public function check(ViewEvent $event): void
     {
         $user = $event->getControllerResult();
