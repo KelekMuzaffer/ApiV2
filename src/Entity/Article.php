@@ -7,6 +7,7 @@ use App\Repository\ArticleRepository;
 use DateTimeImmutable;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
@@ -60,9 +61,8 @@ class Article
     private $price;
 
     /**
-     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="articles")
+     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="articles")
      * @ORM\JoinColumn(nullable=false)
-     *
      * @Groups({"article_details_read"})
      */
     private $author;
@@ -108,12 +108,12 @@ class Article
         return $this;
     }
 
-    public function getAuthor(): ?User
+    public function getAuthor(): UserInterface
     {
         return $this->author;
     }
 
-    public function setAuthor(?User $author): self
+    public function setAuthor(UserInterface $author): self
     {
         $this->author = $author;
 

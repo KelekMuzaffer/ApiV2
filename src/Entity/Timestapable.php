@@ -6,16 +6,25 @@ namespace App\Entity;
 
 use DateTimeInterface;
 use Doctrine\ORM\Mapping as ORM;
-use phpDocumentor\Reflection\Types\Nullable;
 
 trait Timestapable{
 
+    // On gére ici la date de crétion ex: quand on créer un article ou un user
+    // Utiliser dans une entité avec : Use Timestapable
+    // Le setCreatedAt est éfectuer directement dans le construct de l'entité donc pas présent ici
 
     /**
      * @var DateTimeInterface
      * @ORM\Column(type="datetime")
      */
     private $createdAt;
+
+    /**
+     * @var DateTimeInterface
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    private $updatedAt;
+
 
     /**
      * @return DateTimeInterface
@@ -26,15 +35,7 @@ trait Timestapable{
     }
 
     /**
-     * @param DateTimeInterface $createdAt
-     */
-    public function setCreatedAt(DateTimeInterface $createdAt): self
-    {
-        $this->createdAt = $createdAt;
-    }
-
-    /**
-     * @return DateTimeInterface
+     * @return DateTimeInterface|null
      */
     public function getUpdatedAt(): ?DateTimeInterface
     {
@@ -43,17 +44,12 @@ trait Timestapable{
 
     /**
      * @param DateTimeInterface $updatedAt
+     * @return $this
      */
     public function setUpdatedAt(DateTimeInterface $updatedAt): self
     {
         $this->updatedAt = $updatedAt;
+
+        return $this;
     }
-
-    /**
-     * @var DateTimeInterface
-     * @ORM\Column(type="datetime", nullable=true)
-     */
-    private $updatedAt;
-
-
 }

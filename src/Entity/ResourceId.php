@@ -7,7 +7,9 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Annotation\Groups;
 
-/** Centralise la gestion de id et le rajouter dans les entité avec : use ResourceId */
+// Centralise la gestion de id et le rajouter dans les entité avec : use ResourceId
+// Pas de setId car créer automatiquement par la db
+
 trait ResourceId {
     /**
      * @ORM\Id()
