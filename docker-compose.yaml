@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+
+  db:
+    image: mariadb:10.5.5
+    environment:
+      - MYSQL_DATABASE=${DBNAME:-muzaffer}
+      - MYSQL_ROOT_PASSWORD=${DBPASSWORD:-123456789}
+    volumes:
+      - db-data:/var/lib/mysql:rw
+    networks:
+      - default
+    ports:
+      - "3316:3306"
+
+volumes:
+  db-data: {}
