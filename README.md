@@ -33,7 +33,7 @@ Ici on céer : config/packages/lexik_jwt_authentication.yaml, le directory jwt e
 Créer ces entités avec les relations (voir le dossier Entité pour ma part) et ne pas oubliés les migrations
  - Faire toute les commandes dans le terminal de l'IDE
  
- ## On à installer la base des composants et fichier pour commencer une API 
+ ## On à installer la base des composants et des fichiers pour commencer une API 
  ## Ressources:
  - https://symfony.com/doc/current/setup.html : pour créer le project Symfony
  - https://github.com/lexik/LexikJWTAuthenticationBundle/blob/master/Resources/doc/index.md#getting-started : pour configurer l'ajout d'un token 
