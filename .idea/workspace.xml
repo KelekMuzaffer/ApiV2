@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d6182d74-dfe1-4fe0-8a82-b8e4ad0d4cf2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/ApiV2/config/packages/lexik_jwt_authentication.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ApiV2/config/packages/lexik_jwt_authentication.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiV2/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ApiV2/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiV2/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ApiV2/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiV2/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ApiV2/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiV2/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/ApiV2/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiV2/src/Swagger/SwaggerDecorator.php" beforeDir="false" afterPath="$PROJECT_DIR$/ApiV2/src/Swagger/SwaggerDecorator.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/ApiV2" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="Ubuntu 18.04" />
+  <component name="ProjectId" id="1gzW4WV9n1eznPLbxMRTXo7MWDP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu-18.04\home\muzaffer\dev\ApiV2\ApiV2\src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu-18.04\home\muzaffer\dev\ApiV2\ApiV2\src\Authorizations" />
+      <recent name="\\wsl$\Ubuntu-18.04\home\muzaffer\dev\ApiV2\ApiV2\src\Events" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d6182d74-dfe1-4fe0-8a82-b8e4ad0d4cf2" name="Default Changelist" comment="" />
+      <created>1599117709334</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599117709334</updated>
+      <workItem from="1599117710420" duration="26718000" />
+      <workItem from="1599198621835" duration="3694000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TerminalProjectNonSharedOptionsProvider">
+    <option name="shellPath" value="bash" />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2275" y="307" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599131374727">
+      <screen x="1680" y="0" width="1680" height="1010" />
+    </state>
+    <state x="2275" y="307" key="#com.intellij.fileTypes.FileTypeChooser/-2560.-226.1280.700/1680.0.1680.1010/0.0.1680.1010@1680.0.1680.1010" timestamp="1599131374727" />
+    <state x="2313" y="214" key="#com.intellij.ide.util.MemberChooser" timestamp="1599143322992">
+      <screen x="1680" y="0" width="1680" height="1010" />
+    </state>
+    <state x="2313" y="214" key="#com.intellij.ide.util.MemberChooser/-2560.-226.1280.700/1680.0.1680.1010/0.0.1680.1010@1680.0.1680.1010" timestamp="1599143322992" />
+    <state x="2249" y="295" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1599139537625">
+      <screen x="1680" y="0" width="1680" height="1010" />
+    </state>
+    <state x="2249" y="295" key="#com.intellij.ide.util.TreeClassChooserDialog/-2560.-226.1280.700/1680.0.1680.1010/0.0.1680.1010@1680.0.1680.1010" timestamp="1599139537625" />
+    <state x="2250" y="260" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599139588895">
+      <screen x="1680" y="0" width="1680" height="1010" />
+    </state>
+    <state x="2250" y="260" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-2560.-226.1280.700/1680.0.1680.1010/0.0.1680.1010@1680.0.1680.1010" timestamp="1599139588895" />
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1599227633041">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1599227633041" />
+    <state x="2251" y="228" key="NewPhpClassDialog" timestamp="1599143900778">
+      <screen x="1680" y="0" width="1680" height="1010" />
+    </state>
+    <state x="2251" y="228" key="NewPhpClassDialog/-2560.-226.1280.700/1680.0.1680.1010/0.0.1680.1010@1680.0.1680.1010" timestamp="1599143900778" />
+    <state x="2354" y="428" key="NewPhpFileDialog" timestamp="1599137208216">
+      <screen x="1680" y="0" width="1680" height="1010" />
+    </state>
+    <state x="2354" y="428" key="NewPhpFileDialog/-2560.-226.1280.700/1680.0.1680.1010/0.0.1680.1010@1680.0.1680.1010" timestamp="1599137208216" />
+    <state x="417" y="0" width="549" height="680" key="find.popup" timestamp="1599226506605">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="2227" y="61" width="585" height="888" key="find.popup/-2560.-226.1280.700/1680.0.1680.1010/0.0.1680.1010@1680.0.1680.1010" timestamp="1599141884147" />
+    <state x="417" y="0" width="549" height="680" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1599226506605" />
+  </component>
+</project>

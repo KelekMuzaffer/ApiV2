@@ -1,3 +1,4 @@
+# fichier à créer dans la source du projet car ici on utilise docker pour la database
 version: '3.7'
 
 services:

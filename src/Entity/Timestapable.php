@@ -6,6 +6,7 @@ namespace App\Entity;
 
 use DateTimeInterface;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 trait Timestapable{
 
@@ -16,6 +17,7 @@ trait Timestapable{
     /**
      * @var DateTimeInterface
      * @ORM\Column(type="datetime")
+     * @Groups({"article_info","article_details_read"})
      */
     private $createdAt;
 

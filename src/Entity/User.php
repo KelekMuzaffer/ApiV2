@@ -8,8 +8,10 @@ use DateTimeImmutable;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Serializer\Annotation\Groups;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
@@ -29,6 +31,7 @@ use Symfony\Component\Serializer\Annotation\Groups;
  *                  "delete"
  *              }
  * )
+ * @UniqueEntity("email", message="Cette email est déjà utilisé")
  */
 class User implements UserInterface
 {
@@ -45,6 +48,8 @@ class User implements UserInterface
     /**
      * @ORM\Column(type="string", length=180, unique=true)
      * @Groups({"user_info", "user_details_read","article_details_read"})
+     * @Assert\NotBlank(message="L'email est obligatoire")
+     * @Assert\Email(message="Email format invalide")
      */
     private $email;
 
@@ -56,8 +61,11 @@ class User implements UserInterface
     /**
      * @var string The hashed password
      * @ORM\Column(type="string")
+     * @Assert\NotBlank(message="Le password est obligatoire")
      */
     private $password;
+
+    public $confirmPassword;
 
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\Article", mappedBy="author", orphanRemoval=true)

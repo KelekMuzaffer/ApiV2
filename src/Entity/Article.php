@@ -56,7 +56,7 @@ class Article
 
     /**
      * @ORM\Column(type="integer")
-     * @Groups({"user_details_read"})
+     * @Groups({"article_details_read","article_info"})
      */
     private $price;
 

@@ -1,4 +1,4 @@
-# Config pour generer un token lier avec .env
+# Config pour generer un token lier avec .env voir le gitHub sur google de lexik_jwt
 lexik_jwt_authentication:
     secret_key: '%env(resolve:JWT_SECRET_KEY)%'
     public_key: '%env(resolve:JWT_PUBLIC_KEY)%'

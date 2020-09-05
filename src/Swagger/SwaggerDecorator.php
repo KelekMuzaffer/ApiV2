@@ -7,6 +7,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Serializer\Normalizer\NormalizerInterface;
 
 // Directory et class ajouter d'après la doc d'api-platform pour l'instant ne comprend pas trop à quoi elle sert
+// Changement du path de $tokenDocumentation il doit être remplacer par celui qui se trouve dans routes.yaml et qui correspond au login check
 // Ajouter aussi au services.yaml
 
 final class SwaggerDecorator implements NormalizerInterface
