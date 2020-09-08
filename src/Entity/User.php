@@ -33,7 +33,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * )
  * @UniqueEntity("email", message="Cette email est déjà utilisé")
  */
-class User implements UserInterface
+class User implements UserInterface, \Serializable
 {
     /**
      * Centralisation de la createdAt
@@ -62,9 +62,13 @@ class User implements UserInterface
      * @var string The hashed password
      * @ORM\Column(type="string")
      * @Assert\NotBlank(message="Le password est obligatoire")
+     * @Assert\Length(min="8", minMessage="Min 8 caractères pour le password!")
      */
     private $password;
 
+    /**
+     * @Assert\EqualTo(propertyPath="password", message="Vous n'avez pas tapez le même mot de passe.")
+     */
     public $confirmPassword;
 
     /**
@@ -182,5 +186,23 @@ class User implements UserInterface
         }
 
         return $this;
+    }
+
+    public function serialize()
+    {
+        return serialize([
+            $this->id,
+            $this->email,
+            $this->password
+        ]);
+    }
+
+    public function unserialize($serialized)
+    {
+        list(
+            $this->id,
+            $this->email,
+            $this->password,
+            ) = unserialize($serialized, ['allowed_classes'=>false]);
     }
 }
