@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d6182d74-dfe1-4fe0-8a82-b8e4ad0d4cf2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +156,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -185,7 +184,11 @@
       <workItem from="1599463617656" duration="1119000" />
       <workItem from="1599465024770" duration="900000" />
       <workItem from="1599466393004" duration="1262000" />
-      <workItem from="1599469049301" duration="12726000" />
+      <workItem from="1599469049301" duration="13420000" />
+      <workItem from="1599722087992" duration="1415000" />
+      <workItem from="1599806834032" duration="717000" />
+      <workItem from="1599808856840" duration="115000" />
+      <workItem from="1599812038886" duration="1195000" />
     </task>
     <servers />
   </component>
@@ -234,11 +237,11 @@
       <screen x="1680" y="0" width="1680" height="1010" />
     </state>
     <state x="2250" y="260" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-2560.-226.1280.700/1680.0.1680.1010/0.0.1680.1010@1680.0.1680.1010" timestamp="1599139588895" />
-    <state x="2233" y="141" key="FileChooserDialogImpl" timestamp="1599463750022">
-      <screen x="1680" y="0" width="1680" height="1010" />
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1599808845200">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="2233" y="141" key="FileChooserDialogImpl/-2560.-226.1280.700/1680.0.1680.1010/0.0.1680.1010@1680.0.1680.1010" timestamp="1599463750022" />
-    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1599227633041" />
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1599808845200" />
     <state x="2251" y="228" key="NewPhpClassDialog" timestamp="1599143900778">
       <screen x="1680" y="0" width="1680" height="1010" />
     </state>
